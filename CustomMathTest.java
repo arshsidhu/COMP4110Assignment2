@@ -1,3 +1,8 @@
+//Arshdeep Sidhu
+//104567665
+//Assignment 2b
+//Class contains JUnit tests
+
 package COMP4110;
 
 import static org.junit.Assert.*;
@@ -12,6 +17,7 @@ import java.lang.Math;
 public class CustomMathTest {
 	
 	public CustomMath.CustomTrig t;
+	//Can't use Math.PI so using this approximation
 	public final double PI = 3.14159265358979323846;
 
 	@Before
