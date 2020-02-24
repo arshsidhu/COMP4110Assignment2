@@ -6,12 +6,9 @@
 package COMP4110;
 
 import static org.junit.Assert.*;
-
 import org.junit.Before;
 import org.junit.Test;
-
 import COMP4110.CustomMath.CustomTrig;
-
 import java.lang.Math;
 
 public class CustomMathTest {
@@ -27,6 +24,10 @@ public class CustomMathTest {
 		
 	}
 
+	//All test cases give a leeway of 0.05 because
+	//computation of the taylor serious is not 100% accurate
+	//alongside the approximation of PI
+	
 	//Test with a negative value
 	@Test
 	public void negSinTest() {

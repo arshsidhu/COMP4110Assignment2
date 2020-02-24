@@ -3,7 +3,6 @@
 //Assignment 2b
 //Class contains trig functions
 
-
 package COMP4110;
 
 public class CustomMath {
@@ -19,6 +18,7 @@ public class CustomMath {
 		//Default constructor
 		public CustomTrig() {}
 		
+		//Taylor series interpretation of sine
 		public static double sin(double a){
 
 	        //Converts angle so its between -2 PI and 2 PI
@@ -40,6 +40,7 @@ public class CustomMath {
 	    
 	    }
 		
+		//Taylor series interpretation of cosine
 		public static double cos(double a){
 
 	        //Converts angle so its between -2 PI and 2 PI
@@ -61,8 +62,8 @@ public class CustomMath {
 	    
 	    }
 		
+		//Tan is simply sin/cos
 		public static double tan(double a){
-			//tan is simply sin/cos
 	        return sin(a)/cos(a);
 	    }
 		
