@@ -61,10 +61,12 @@ public class CustomMath {
 	    
 	    }
 		
-		public static double tan(double a) {
-			return 9999.99;
-		}
+		public static double tan(double a){
+			//tan is simply sin/cos
+	        return sin(a)/cos(a);
+	    }
 		
+		//For all the functions in degrees, simply convert to radians
 		public static double sin_degree(double a){
 	        a = a * (PI/180);
 	        return sin(a);
@@ -75,9 +77,10 @@ public class CustomMath {
 	        return cos(a);
 	    }
 		
-		public static double tan_degree(double a) {
-			return 9999.99;
-		}
+		public static double tan_degree(double a){
+	        a = a * (PI/180);
+	        return tan(a);
+	    }
 		
 	}
 }

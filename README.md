@@ -16,3 +16,7 @@ One third of test cases (14) pass.
 ### Version 3.0
 two thirds of test cases (28) pass.
 ![](Screenshots/twothirdpass.png)
+
+### Version 4.0
+All test cases (42) pass!
+![](Screenshots/allpass.png)
