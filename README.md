@@ -12,3 +12,7 @@ All test cases fail.
 ### Version 2.0
 One third of test cases (14) pass.
 ![](Screenshots/onethirdpass.png)
+
+### Version 3.0
+two thirds of test cases (28) pass.
+![](Screenshots/twothirdpass.png)
