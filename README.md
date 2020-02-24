@@ -10,5 +10,5 @@ All test cases fail.
 ![](Screenshots/allfail.png)
 
 ### Version 2.0
-One third of test cases (14) pass
+One third of test cases (14) pass.
 ![](Screenshots/onethirdpass.png)

@@ -40,9 +40,26 @@ public class CustomMath {
 	    
 	    }
 		
-		public static double cos(double a) {
-			return 9999.99;
-		}
+		public static double cos(double a){
+
+	        //Converts angle so its between -2 PI and 2 PI
+	        a = a % (2 * PI);
+
+	        // compute the Taylor series approximation
+	        // ith term = x^i / i!
+	        double term = 1.0;
+	        // sum of first i terms in taylor series      
+	        double sum  = 1.0;      
+
+	        for (int i = 1; term != 0.0; i++) {
+	            term *= (a / i);
+	            if (i % 4 == 0) sum += term;
+	            if (i % 4 == 2) sum -= term;
+	        }
+
+	        return sum;
+	    
+	    }
 		
 		public static double tan(double a) {
 			return 9999.99;
@@ -53,9 +70,10 @@ public class CustomMath {
 	        return sin(a);
 	    }
 		
-		public static double cos_degree(double a) {
-			return 9999.99;
-		}
+		public static double cos_degree(double a){
+	        a = a * (PI/180);
+	        return cos(a);
+	    }
 		
 		public static double tan_degree(double a) {
 			return 9999.99;
